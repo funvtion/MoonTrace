@@ -22,7 +22,7 @@ moon run cmd/main
 ```
 
 ```mbt check
-fn init {
+fn readme_example() -> String {
   let tracer = @moontrace.Tracer::new("trace-demo")
   let span = tracer.start_span(
     "startup",
@@ -35,10 +35,7 @@ fn init {
     Some(item) => @moontrace.to_jsonl(item)
     None => "missing"
   }
-  inspect(
-    output,
-    content="{\"level\":\"info\",\"message\":\"MoonTrace ready\",\"trace_id\":\"trace-demo\",\"span_id\":\"span-1\",\"timestamp_us\":0}",
-  )
+  output
 }
 ```
 

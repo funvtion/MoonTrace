@@ -5,3 +5,6 @@
 - Added MoonTrace proposal-stage package skeleton.
 - Added structured log record, context, span, and exporter API draft.
 - Added examples, tests, CI, checklist, and OSC2026 proposal draft.
+- Updated tests and README examples for current MoonBit CI compatibility.
+- Added submission, review, architecture, testing, examples, contribution, and
+  security notes for competition review.

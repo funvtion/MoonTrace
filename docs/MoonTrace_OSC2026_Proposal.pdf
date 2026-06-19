@@ -1,0 +1,134 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 3096 >>
+stream
+BT
+/F1 16 Tf
+/F1 16 Tf
+50 770 Td (MoonTrace: Structured Logging and Span Tracing for MoonBit) Tj
+1 0 0 1 -50 -13 Tm
+/F1 11 Tf
+50 752 Td (OSC2026 Proposal) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 739 Td () Tj
+1 0 0 1 -50 -13 Tm
+/F1 12 Tf
+50 726 Td (Background) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 708 Td (MoonBit programs need a small observability layer for tests, CLI tools, services, and WebAssembly apps.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 695 Td (MoonTrace provides structured logs, trace context, span lifecycle APIs, and portable export formats.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 682 Td () Tj
+1 0 0 1 -50 -13 Tm
+/F1 12 Tf
+50 669 Td (Goals) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 651 Td (- Stable log levels: Trace, Debug, Info, Warn, Error.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 638 Td (- Key/value fields for machine-readable records.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 625 Td (- Context propagation through trace_id and span_id.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 612 Td (- Tracer, Span, and FinishedSpan APIs for nested work.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 599 Td (- JSONL export and Chrome Trace timeline export.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 586 Td () Tj
+1 0 0 1 -50 -13 Tm
+/F1 12 Tf
+50 573 Td (Technical Plan) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 555 Td (The core package remains zero-dependency and portable across MoonBit targets. The proposal-stage code) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 542 Td (keeps deterministic timestamps for tests; later milestones add pluggable clocks, JSON escaping, nested) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 529 Td (span parenting, and richer exporters. Explicit data types are preferred over global state.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 516 Td () Tj
+1 0 0 1 -50 -13 Tm
+/F1 12 Tf
+50 503 Td (Milestones) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 485 Td (2026-07-10: publish repository, submit proposal, keep a minimal compiling demo.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 472 Td (2026-07-15: apply review feedback and freeze the v0.1 API shape.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 459 Td (2026-08-15: complete logger, context, span nesting, JSONL, Chrome Trace, and tests.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 446 Td (2026-09-20: publish to Mooncakes, add examples, final report, and demo material.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 433 Td () Tj
+1 0 0 1 -50 -13 Tm
+/F1 12 Tf
+50 420 Td (Acceptance Criteria) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 402 Td (moon check and moon test pass in CI. README examples match implementation. JSONL output is valid JSON) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 389 Td (per line. Chrome Trace output opens in browser timeline tooling. Mooncakes package contains docs,) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 376 Td (examples, license, and changelog.) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 363 Td () Tj
+1 0 0 1 -50 -13 Tm
+/F1 12 Tf
+50 350 Td (Risk Control) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 332 Td (Keep the public API small, rely on official moon.mod.json/moon.pkg formats, add snapshot tests for) Tj
+1 0 0 1 -50 -13 Tm
+/F1 9 Tf
+50 319 Td (exporters, and emphasize trace context plus timeline visualization beyond a generic logger.) Tj
+1 0 0 1 -50 -13 Tm
+ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3459
+%%EOF

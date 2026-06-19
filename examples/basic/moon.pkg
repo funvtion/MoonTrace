@@ -1,0 +1,7 @@
+import {
+  "osc2026/moontrace" @moontrace,
+}
+
+options(
+  "is-main": true,
+)

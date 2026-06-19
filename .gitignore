@@ -1,0 +1,8 @@
+target/
+.moon/
+.mooncakes/
+*.wasm
+*.js
+*.c
+*.o
+*.exe

@@ -1,0 +1,15 @@
+{
+  "name": "osc2026/moontrace",
+  "version": "0.1.0",
+  "readme": "README.md",
+  "repository": "https://github.com/funvtion/MoonTrace.git",
+  "license": "MIT",
+  "keywords": [
+    "logging",
+    "tracing",
+    "observability",
+    "moonbit",
+    "osc2026"
+  ],
+  "description": "Structured logging and span tracing toolkit for MoonBit applications."
+}
